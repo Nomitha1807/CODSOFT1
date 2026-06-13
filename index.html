@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manthena Nomitha Varma | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Nomitha</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Manthena Nomitha Varma">
+        </div>
+
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Manthena Nomitha Varma</span></h1>
+            <p id="typing"></p>
+
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about-box">
+        <p>
+            <p>
+Hello! I'm <strong>Manthena Nomitha Varma</strong>, a passionate and dedicated Web Developer with a strong interest in creating modern, responsive, and user-friendly websites. I enjoy transforming ideas into interactive digital experiences through clean code and creative design.
+
+I have experience working with HTML, CSS, JavaScript, and responsive web design principles to build visually appealing and functional web applications. My goal is to create websites that not only look beautiful but also provide an excellent user experience across all devices.
+
+I am constantly learning new technologies and improving my skills to stay updated with the latest trends in web development. I enjoy solving problems, exploring innovative design ideas, and taking on new challenges that help me grow both personally and professionally.
+
+My projects include responsive landing pages, personal portfolio websites, and interactive web applications such as calculators. I am enthusiastic about collaborating on exciting projects and contributing to meaningful digital solutions.
+
+Beyond coding, I believe in continuous learning, creativity, and attention to detail, which help me deliver high-quality work and achieve my goals as a developer.
+</p>
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            HTML
+            <div class="bar">
+                <div class="fill" style="width:95%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            CSS
+            <div class="bar">
+                <div class="fill" style="width:90%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            JavaScript
+            <div class="bar">
+                <div class="fill" style="width:85%"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Modern responsive landing page with clean UI.</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing skills and projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Calculator</h3>
+            <p>Calculator built using HTML, CSS and JavaScript.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="resume">
+
+    <h2 class="title">Resume</h2>
+
+    <div class="about-box">
+        <center>
+            <p>Click below to download my resume.</p>
+            <br>
+            <a href="resume.pdf" download class="btn">
+                Download Resume
+            </a>
+        </center>
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <div class="about-box">
+        <center>
+            <p>Email:</p>
+            <br>
+            <a href="mailto:nomimanthena18@gmail.com">
+                nomimanthena18@gmail.com
+                
+            </a>
+        </center>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Manthena Nomitha Varma | Web Developer
+</footer>
+
+<script>
+const words = [
+"Web Developer",
+];
+
+let i = 0;
+
+function changeText(){
+    document.getElementById("typing").innerHTML = words[i];
+    i = (i + 1) % words.length;
+}
+
+changeText();
+setInterval(changeText,2000);
+</script>
+
+</body>
+</html>
